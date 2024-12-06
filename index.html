@@ -8,13 +8,11 @@
     <!-- Link CSS File -->
     <link rel="stylesheet" href="css/master.css" />
   </head>
-  <body>
+  <body class=".light">
     <div class="landing-page">
       <div class="header">
         <div class="nav">
-          <div class="logo" onclick="window.location.href = '#'">
-            Travelista
-          </div>
+          <div class="logo">Travelista</div>
           <ul class="links">
             <li><a href="#" class="active">Home</a></li>
             <li><a href="pages/services.html">Services</a></li>
@@ -26,13 +24,8 @@
             <li><a href="https://www.visahq.com/" target="_blank">Visas</a></li>
           </ul>
           <div class="buttons">
-            <button class="dark-btn" onclick="darkMode()">Light</button>
-            <button
-              class="login-btn"
-              onclick="window.location.href='pages/login.html';"
-            >
-              Login
-            </button>
+            <button class="dark-btn">Light</button>
+            <button class="login-btn">Login</button>
           </div>
         </div>
         <div class="content">
@@ -45,29 +38,24 @@
           </p>
           <div class="search-box">
             <select name="date" id="date">
-              <option value="">Date</option>
+              <option value="" selected disabled>Date</option>
               <option value="23">23 August</option>
               <option value="24">25 August</option>
               <option value="25">29 August</option>
             </select>
             <select name="budget" id="budget">
-              <option value="">Budget</option>
-              <option value="163">$163</option>
-              <option value="218">$218</option>
-              <option value="285">$285</option>
+              <option value="" selected disabled>Budget</option>
+              <option value="low">Low</option>
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
             </select>
             <select name="guest" id="guest">
-              <option value="">Guest</option>
+              <option value="" selected disabled>Guest</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
             </select>
-            <button
-              class="search-button"
-              onclick="window.location.href = '#best-package'"
-            >
-              Search
-            </button>
+            <button class="search-button">Search</button>
           </div>
         </div>
       </div>

@@ -12,16 +12,14 @@
     <!-- Link CSS File -->
     <link rel="stylesheet" href="../css/gallary.css" />
   </head>
-  <body>
+  <body class="ligt">
     <div class="gallary-page">
       <div class="header">
         <div class="nav">
-          <div class="logo" onclick="window.location.href = '../index.html'">
-            Travelista
-          </div>
+          <div class="logo">Travelista</div>
           <div class="buttons">
-            <button class="dark-btn" onclick="darkMode()">Light</button>
-            <button class="menu" onclick="showMenu()"></button>
+            <button class="dark-btn">Light</button>
+            <button class="menu-btn"></button>
           </div>
         </div>
         <div class="line"></div>
@@ -45,12 +43,12 @@
         </div>
         <div class="footer">
           <p id="name-country">Egypt</p>
-          <button onclick="openCountry()">View</button>
+          <button id="view-btn">View</button>
         </div>
-        <button class="right" id="right-btn" onclick="changePhotoRight()">
+        <button class="right" id="right-btn">
           <img src="../imgs/right-icon.svg" id="right-btn-svg" />
         </button>
-        <button class="left" id="left-btn" onclick="changePhotoLeft()">
+        <button class="left" id="left-btn">
           <img src="../imgs/left-icon.svg" id="left-btn-svg" />
         </button>
       </div>

@@ -4,6 +4,12 @@
   --txt-color2: gray;
 }
 
+.dark {
+  --main-color: #181a1b;
+  --txt-color: white;
+  --txt-color2: cadetblue;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -39,7 +45,7 @@ body {
   cursor: pointer;
 }
 
-.gallary-page .header .nav .menu {
+.gallary-page .header .nav .menu-btn {
   border: none;
   background-color: transparent;
   width: 22px;
@@ -94,7 +100,7 @@ body {
   font-weight: bold;
   position: absolute;
   right: -15px;
-  top: 35px;
+  top: 42px;
   display: none;
   z-index: 1000;
   box-shadow: -15px 15px 15px black;

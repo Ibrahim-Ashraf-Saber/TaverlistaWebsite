@@ -108,26 +108,58 @@ function openCountry() {
 }
 
 // Dark Mode
-var root = document.querySelector(":root");
 var darkbtn = document.getElementsByClassName("dark-btn")[0];
-var menuIcon = document.getElementsByClassName("menu")[0];
+var menuIcon = document.getElementsByClassName("menu-btn")[0];
 var darkModeSt = false;
 function darkMode() {
   if (darkModeSt) {
     // Light
-    root.style.setProperty("--main-color", "white");
-    root.style.setProperty("--txt-color", "black");
-    root.style.setProperty("--txt-color2", "gray");
+    document.body.className = "light";
     darkbtn.innerHTML = "Light";
     menuIcon.style.backgroundImage = "url('../imgs/menu-icon-black.svg')";
     darkModeSt = false;
   } else {
     // Dark
-    root.style.setProperty("--main-color", "#181a1b");
-    root.style.setProperty("--txt-color", "white");
-    root.style.setProperty("--txt-color2", "cadetblue");
+    document.body.className = "dark";
     menuIcon.style.backgroundImage = "url('../imgs/menu-icon-white.svg')";
     darkbtn.innerHTML = "Dark";
     darkModeSt = true;
   }
 }
+
+// Click Buttons
+// Logo Click
+var logo = document.getElementsByClassName("logo")[0];
+logo.onclick = function () {
+  window.open("../index.html", "_self");
+};
+
+// Dark Mode Button
+var darkbtn = document.getElementsByClassName("dark-btn")[0];
+darkbtn.onclick = function () {
+  darkMode();
+};
+
+// Menu
+var menubtn = document.getElementsByClassName("menu-btn")[0];
+menubtn.onclick = function () {
+  showMenu();
+};
+
+// Right Change
+var rightbtn = document.getElementById("right-btn");
+rightbtn.onclick = function () {
+  changePhotoRight();
+};
+
+// Left Change
+var leftbtn = document.getElementById("left-btn");
+leftbtn.onclick = function () {
+  changePhotoLeft();
+};
+
+// View Button
+var viewbtn = document.getElementById("view-btn");
+viewbtn.onclick = function () {
+  openCountry();
+};
