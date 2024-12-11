@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="shortcut icon"
+      href="../imgs/fav-icon.webp"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <h3>Your ultimate gateway to exploring the world!</h3>
+
+        <div id="slideshow">
+          <img
+            src="https://www.roadaffair.com/wp-content/uploads/2017/10/doi-inthanon-national-park-thailand-shutterstock_227684350.jpg"
+            class="active"
+          />
+          <img
+            src="https://www.tripsavvy.com/thmb/xRXwhpK445rYzhwtFvC6dXnKPsY=/4085x2723/filters:fill(auto,1)/railay-thailand-d1baa19e1a3b43c0a6283d23cc455b48.jpg"
+          />
+          <img
+            src="https://www.roadaffair.com/wp-content/uploads/2017/10/doi-inthanon-national-park-thailand-shutterstock_227684350.jpg"
+          />
+        </div>
+        <a href="../index.html">Back to website</a>
+      </div>
+      <div class="right">
+        <center><h2>Login</h2></center>
+        <p>
+          New here ?
+          <a href="signup.html" style="color: #6c63ff">Create an account</a>
+        </p>
+        <form>
+          <input type="email" placeholder="Email" required />
+          <input
+            type="password"
+            placeholder="Enter your password"
+            id="input-pass"
+            required
+            maxlength="16"
+            minlength="8"
+          />
+          <div>
+            <input type="checkbox" id="showPass" onchange="showPassword()" />
+            Show Password
+          </div>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+    <script src="../js/login.js"></script>
+  </body>
+</html>
